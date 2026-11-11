@@ -1,0 +1,17 @@
+# BRC Merge Patcher additions list, 1.0.0 (11 November 2026).
+# Every BRC mod's vendor additions, declared by hand. Lines naming an item you don't have are harmless.
+# Alpha Pyramids 1.0.0: one leaf table with the manual, then one line at each of three vendors.
+@tables-before CYS_MagicSeller
+new treasuretable "BRC_AlphaPyramids"
+IgnoreLevelDiff 1
+new subtable "-1"
+object category "I_BRC_AlphaPartyManual",100,100,0,0,0,0,0,0
+@append CYS_MagicSeller
+new subtable "-1"
+object category "T_BRC_AlphaPyramids",100,100,0,0,0,0,0,0
+@append LUC_Nadia
+new subtable "-1"
+object category "T_BRC_AlphaPyramids",100,100,0,0,0,0,0,0
+@append HOM_TellerOfSecrets
+new subtable "-1"
+object category "T_BRC_AlphaPyramids",100,100,0,0,0,0,0,0
